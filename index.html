@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!--Libreria css-->
+    <link rel="stylesheet" href="style.css"> <!-- Con esto vinculamos nuestro archivo CSS-->
+
+    <title>Pagina Web Basica</title>
+</head>
+
+<body>
+    <!-- 
+    La etiqueta <div> configura espacios dentro de la pa¡gina.
+     Adicionalmente, las etiquetas div y span se suelen acompañar de uno o dos para¡metros destinados a identificar ese bloque:
+
+    id: permite establecer un identificador al inico para el bloque. Asi­ podremos referirnos al bloque de forma inequi­voca.
+    class: es similar a id, pero con la ventaja de que se puede repetir; asi­ que podemos tener varios <div> diferentes con la misma clase.
+    Usando id y class podemos diferenciar unos div de otros y asi­ aplicarles estilos CSS diferentes
+    Las etiquetas id y class se utilizan como se muestra en el ejemplo:
+
+    <div id="indice">
+    <br>i­ndice
+    </div>
+    <div class="destacado">
+    Este texto se destaca mediante un estilo.
+    </div>
+    <div id="articulo15" class="articulos_estandar">
+    Texto de un arti­culo
+    </div>
+
+    Como se pede apreciar, las etiquetas id y class se pueden mezclar. Se mantiene siempre esa norma: los id son al inicos dentro de una pa¡gina,
+    mientras que los class se suelen repetir para que varios elementos tomen un mismo estilo.  
+    -->
+    <!--
+        Los ATRIBUTOS contienen información adicional acerca del elemento, la cual no quieres que aparezca 
+        en el contenido real del elemento. Aquí class es el nombre del atributo y editor-note el valor del
+         atributo. En este caso, el atributo class permite darle al elemento un nombre identificativo, 
+         que se puede utilizar luego para apuntarle al elemento información de estilo y demás cosas
+    -->
+    <!--
+    Es la forma de evitar re-direccionamiento del navegador y recarga del DOM
+    Se tiene en cuenta que prefijo “#” se utiliza para vincular a elementos internos de la página, ejemplo:
+
+    <a href="#enlace">enlace interno</a> 
+    <div id="enlace">destino</div> 
+    -->
+
+    <div class="head">
+
+        <div class="logo">
+            <a href="#">logo</a> <!-- enlace -->
+        </div>
+
+        <nav class="navbar"> <!-- nav para definir la seccion del menu del navegador -->
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+            <a href="#">Productos</a>
+            <a href="#">Precio</a>
+        </nav>
+
+    </div>
+
+    <header class="header"> <!--Para definir el encabezado de la pagina web que incluye el titulo y el menu de navegacion-->
+    
+        <h2 class="titulo">Inicio</h2> 
+            
+            <p class="parrafo1">
+                En este caso al parafo se le colocò un p class para poder deiferenciar al resto
+                y a inicio se le coloca titulo y no title para , tambien diferenciar de los demas.
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+
+        <div class="btn-home">
+            <a href="#" class="btn">Saber mas</a>
+            <a href="#" class="btn">Otros</a>
+        </div>
+
+                        <section class="sau"> <!--Para agrupar contenido y separa por secciones-->
+
+                                    <h2 class="title">Productos</h2> <!-- Si se quiere hacer diferente creamos un class-->
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore et reiciendis repellendus perspiciatis vel possimus impedit, accusamus quia incidunt libero. Earum, quisquam nemo quae consectetur doloribus dolorum commodi obcaecati voluptatum!
+                                    </p>
+                
+                            <div class="box-container">
+
+                                <div class="box">
+                                    <i class=" fab fa-facebook"></i>
+                                    <h3>Facabook</h3>
+                                    <p>Con todas estas funciones:
+                                        height: 11rem;
+                                        width: 17rem; 
+                                        background: #d07e7e; 
+                                        border-radius: 1rem; 
+                                        box-shadow: 0 .3 5rem rgba(0, 0, 0, .5); 
+                                        margin: 2rem;
+                                        creamos  cada uno de estos cuadros
+                                    </p>
+                                </div>
+                                <div class="box">
+                                    <i class=" fab fa-apple"></i>
+                                    <h3>Apple</h3>
+                                    <p>Con todas estas funciones:
+                                        height: 11rem;
+                                        width: 17rem; 
+                                        background: #d07e7e; 
+                                        border-radius: 1rem; 
+                                        box-shadow: 0 .3 5rem rgba(0, 0, 0, .5); 
+                                        margin: 2rem;
+                                        creamos  cada uno de estos cuadros</p>
+                                </div>
+                                <div class="box">
+                                    <i class=" fab fa-android"></i>
+                                    <h3>Android</h3>
+                                    <p>Con todas estas funciones:
+                                        height: 11rem;
+                                        width: 17rem; 
+                                        background: #d07e7e; 
+                                        border-radius: 1rem; 
+                                        box-shadow: 0 .3 5rem rgba(0, 0, 0, .5); 
+                                        margin: 2rem;
+                                        creamos  cada uno de estos cuadros</p>
+                                </div>
+
+                            </div>
+                        </section>
+
+
+                        <section class="about">
+
+                            <div class="ao">
+                                    <h2 class="title">Nosotros</h2>
+                                    <p>Empresa dedicada a xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                    </p>
+                                    <a href="#" class="btn">Saber mas</a>
+                            </di<v>
+                            
+
+                        </section>
+
+                        
+                        <section class="contact">
+                           <div class="info">
+                                <h2 class="title">Contacto:</h2>
+                                <p>Cel: 382644499900</p>
+                            </div>
+                                <figure class="map">
+                                    <img src="img/mapa.png" height="220px" width="50%">
+                                </figure> 
+                            
+                        </section>
+
+    </header>
+        
+</body>
+</html>
